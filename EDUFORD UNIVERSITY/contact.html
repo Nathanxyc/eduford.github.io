@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Nathaniel Francis" />
+    <meta name="Description" content="Contact page" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub_header">
+      <nav>
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="nav__links" id="navLinks">
+          <i class="ri-close-line" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- || CONTACT US -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.4351460518105!2d-122.01360132498102!3d37.33220557210017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5908480994d%3A0xe75bfea4dd9a286f!2sApple%20Park%20Way%2C%20Cupertino%2C%20CA%2095014%2C%20USA!5e0!3m2!1sen!2sng!4v1697594030747!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact_us">
+      <div class="row">
+        <div class="contact_col">
+          <div>
+            <i class="ri-home-fill"></i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Bangaloreta, Katushi, LM</p>
+            </span>
+          </div>
+          <div>
+            <i class="ri-phone-fill"></i>
+            <span>
+              <h5>+1 08763557289</h5>
+              <p>Monday to Saturday, 10AM to 4PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="ri-mail-fill"></i>
+            <span>
+              <h5>eduford@gmail.com</h5>
+              <p>Email us your Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact_col">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Your Email" required />
+            <input type="text" placeholder="Enter Your Subject" required />
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- || FOOTER -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero
+        doloribus dolores adipisci incidunt ab! Inventore, dicta iusto aut
+        soluta voluptatum enim consequuntur officia, aspernatur ex debitis
+        <br />
+        aliquid error esse. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Hic, incidunt deserunt. Et cupiditate omnis ullam, eius nemo
+        veritatis porro unde.
+      </p>
+      <div class="icons">
+        <i class="ri-facebook-circle-fill"></i>
+        <i class="ri-twitter-x-fill"></i>
+        <i class="ri-instagram-fill"></i>
+        <i class="ri-threads-line"></i>
+        <i class="ri-linkedin-fill"></i>
+      </div>
+      <p class="icons_p">Copyright &copy; 2023</p>
+    </section>
+
+    <!-- || JAVASCRIPT TOGGLE MENU -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- || JAVASCRIPT TOGGLE MENU -->
+  </body>
+</html>
